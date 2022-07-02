@@ -1,4 +1,5 @@
 const { gql } = require("apollo-server");
+const { date } = require("./resolvers/date");
 exports.typeDefs = gql`
   type Query {
     Tweets: [Tweet!]!
@@ -7,10 +8,12 @@ exports.typeDefs = gql`
     Users: [User]
     Notifications: [Notification]
   }
+  scalar date
   type Tweet {
     id: ID!
     body: String
     date: String
+    isRead: Boolean
     Stats: Stat
   }
   type User {
@@ -32,5 +35,10 @@ exports.typeDefs = gql`
   type Notification {
     id: ID!
     body: String
+  }
+  type Mutation {
+    createTweet(body: String): Tweet
+    deleteTweet(id: ID!): Tweet
+    markTweetRead(id: ID!): Boolean
   }
 `;
