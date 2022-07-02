@@ -4,18 +4,21 @@ const tweets = [
     body: "Blockchain #technology is being considered in various industries due to its track and trace capabilities. At #LOX, we’re bringing #blockchain and #Microdot technology to the wireless device #security industry.",
     date: "2015-03-25",
     StatsId: "stats" + 11,
+    isRead: false,
   },
   {
     id: "tweet" + 2,
     body: "The #electric #fireplace is a kind of #transformation of the fire. The principle of the electric fireplace is to quote the European classical fireplace production #technology and modern acoustooptics, so that the design of the traditional fireplace has been greatly changed",
     date: "2019-12-30",
     StatsId: "stats" + 21,
+    isRead: false,
   },
   {
     id: "tweet" + 3,
     body: "When sensors, IoT and holograms merge to make holographic avatars dance... A stunning show!Learn more about these new technologies and many more by joining FuturePass, our new Web3 Community: http://futurepass.xyz",
     date: "2020-08-09",
     StatsId: "stats" + 31,
+    isRead: false,
   },
 ];
 
