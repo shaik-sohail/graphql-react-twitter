@@ -81,7 +81,9 @@ function Tweets() {
           </div>
         )
       )}
-      <div style={{ width: "82%", backgroundColor: "lightgray" }}>
+      <div
+        style={{ width: "81%", backgroundColor: "lightgray", padding: "0.5em" }}
+      >
         <InputBase
           placeholder={"Tweet to @twitterapi"}
           style={{
